@@ -1,8 +1,8 @@
 {
   "name": "phoenix_test",
   "repository": "git@github.com:jderr-mx/phoenix_test.git",
-  "description": " ",
   "version": "0.0.0",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "deploy": "webpack --mode production",
@@ -31,9 +31,6 @@
   },
   "release-it": {
     "plugins": {
-      "release-it-lerna-changelog": {
-        "infile": "CHANGELOG.md"
-      }
     },
     "git": {
       "tagName": "v${version}"
