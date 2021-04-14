@@ -1,6 +1,8 @@
 {
-  "repository": {},
+  "name": "phoenix_test",
+  "repository": "git@github.com:jderr-mx/phoenix_test.git",
   "description": " ",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "deploy": "webpack --mode production",
