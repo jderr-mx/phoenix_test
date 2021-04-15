@@ -1,3 +1,11 @@
+## v0.9.0 (2021-04-15)
+
+#### :memo: Documentation
+* [#11](https://github.com/jderr-mx/phoenix_test/pull/11) Documented the release-it process ([@jderr-mx](https://github.com/jderr-mx))
+
+#### Committers: 1
+- John Derr ([@jderr-mx](https://github.com/jderr-mx))
+
 ## v0.8.0 (2021-04-15)
 
 #### :rocket: Enhancement
