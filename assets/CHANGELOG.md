@@ -1,3 +1,11 @@
+## v0.8.0 (2021-04-15)
+
+#### :rocket: Enhancement
+* [#10](https://github.com/jderr-mx/phoenix_test/pull/10) Use secrets for github email and name ([@jderr-mx](https://github.com/jderr-mx))
+
+#### Committers: 1
+- John Derr ([@jderr-mx](https://github.com/jderr-mx))
+
 ## v0.7.0 (2021-04-15)
 
 #### :memo: Documentation
