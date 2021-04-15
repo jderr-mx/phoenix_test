@@ -22,7 +22,10 @@ If using yarn the `releaseNotes` command would be `yarn --silent lerna-changelog
 
 The repo info is inferred from the package.json and best I can tell needs to be in the root of the repo for projects that do not have the
 package.json in the root (like this phoenix app) the package.json gets symlinked to the root in the ci process :sob:
+
 When the release-it command is run it will be run from the working directory that contains the package.json for this project is `assets/`
+
+Config in package.json
 
 ```json
   "release-it": {
@@ -45,6 +48,9 @@ When the release-it command is run it will be run from the working directory tha
   }
 
 ```
+
+[Github Action workflow](https://github.com/jderr-mx/phoenix_test/blob/main/.github/workflows/release.yml)
+
 
 The PRs that are included in the release note the ones that are tagged with these labels by default
 
