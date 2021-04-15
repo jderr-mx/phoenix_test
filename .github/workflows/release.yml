@@ -31,7 +31,7 @@ jobs:
           echo Run in assets/
           cd assets
           echo Setup git identity
-          # TODO use a service account
+
           git config user.email ${{ secrets.USER_EMAIL }}
           git config user.name ${{ secrets.USER_NAME }}
           echo Install dependencies
