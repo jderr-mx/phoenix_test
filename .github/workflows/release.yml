@@ -1,0 +1,39 @@
+# github action to be manually run to create a github release using release-it and lerna-changelog
+name: Tag Release
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  release_it:
+
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Symlink package.json to root
+        run: ln -s package.json assets/package.json
+
+      # Runs a set of commands using the runners shell
+      - name: Install dependencies and Create release
+        working-directory: ./assets
+        run: |
+          echo Setup git identity
+          # TODO use a service account
+          git config user.email "john.derr@maximos.io"
+          git config user.name "John Derr"
+          echo Install dependencies
+          yarn
+          echo Run release-it
+          yarn release-it minor --ci --dry-run
