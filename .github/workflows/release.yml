@@ -27,8 +27,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Install dependencies and Create release
-        working-directory: ./assets
         run: |
+          echo Run in assets/
+          cd assets
           echo Setup git identity
           # TODO use a service account
           git config user.email "john.derr@maximos.io"
