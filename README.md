@@ -1,4 +1,3 @@
-![Screen Shot 2021-04-15 at 4 39 24 PM](https://user-images.githubusercontent.com/16136290/114935455-34a42900-9e09-11eb-9a3f-288d7e8cb5e9.png)
 # Example Project to tag releases using release-it with release-it-learn-changelog
 
 ## Purpose
@@ -85,3 +84,7 @@ I've have it set to be configured in the repo secrets and then run in the action
   git config user.email ${{ secrets.USER_EMAIL }}
   git config user.name ${{ secrets.USER_NAME }}
 ```
+
+Using the Slack Github integration here is what is posted when subscribed to releases for this repo
+
+![Screen Shot 2021-04-15 at 4 39 24 PM](https://user-images.githubusercontent.com/16136290/114935455-34a42900-9e09-11eb-9a3f-288d7e8cb5e9.png)
