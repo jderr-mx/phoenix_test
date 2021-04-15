@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Symlink package.json to root
-        run: ln -s assets/package.json package.json 
+        run: ln -s assets/package.json package.json
 
       # Runs a set of commands using the runners shell
       - name: Install dependencies and Create release
@@ -34,6 +34,6 @@ jobs:
           git config user.email "john.derr@maximos.io"
           git config user.name "John Derr"
           echo Install dependencies
-          yarn
+          npm install
           echo Run release-it
-          yarn release-it minor --ci --dry-run
+          npx release-it minor --ci --dry-run
