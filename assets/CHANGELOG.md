@@ -1,3 +1,11 @@
+## v0.7.0 (2021-04-15)
+
+#### :memo: Documentation
+* [#9](https://github.com/jderr-mx/phoenix_test/pull/9) changelog is going to live in assets now ([@jderr-mx](https://github.com/jderr-mx))
+
+#### Committers: 1
+- John Derr ([@jderr-mx](https://github.com/jderr-mx))
+
 ## v0.6.0 (2021-04-15)
 
 #### :memo: Documentation
