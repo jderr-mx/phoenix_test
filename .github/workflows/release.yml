@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Symlink package.json to root
-        run: ln -s package.json assets/package.json
+        run: ln -s assets/package.json package.json 
 
       # Runs a set of commands using the runners shell
       - name: Install dependencies and Create release
