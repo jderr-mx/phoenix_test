@@ -32,8 +32,8 @@ jobs:
           cd assets
           echo Setup git identity
           # TODO use a service account
-          git config user.email "john.derr@maximos.io"
-          git config user.name "John Derr"
+          git config user.email ${{ secrets.USER_EMAIL }}
+          git config user.name ${{ secrets.USER_NAME }}
           echo Install dependencies
           npm install
           echo Run release-it
