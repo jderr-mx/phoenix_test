@@ -1,3 +1,16 @@
+## v0.11.0 (2021-04-21)
+
+#### :memo: Documentation
+* [#15](https://github.com/jderr-mx/phoenix_test/pull/15) more testing ([@jderr-mx](https://github.com/jderr-mx))
+* [#12](https://github.com/jderr-mx/phoenix_test/pull/12) Some better newer fancier title ([@jderr-mx](https://github.com/jderr-mx))
+
+#### :house: Internal
+* [#16](https://github.com/jderr-mx/phoenix_test/pull/16) test token changes ([@jderr-mx](https://github.com/jderr-mx))
+* [#13](https://github.com/jderr-mx/phoenix_test/pull/13) Test permissions of actions to push to protected branch ([@jderr-mx](https://github.com/jderr-mx))
+
+#### Committers: 1
+- John Derr ([@jderr-mx](https://github.com/jderr-mx))
+
 ## v0.10.0 (2021-04-21)
 
 ## v0.9.0 (2021-04-15)
