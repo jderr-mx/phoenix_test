@@ -41,4 +41,4 @@ jobs:
           echo Install dependencies
           npm install
           echo Run release-it
-          npx release-it minor --ci
+          npx release-it minor --ci --dry-run
