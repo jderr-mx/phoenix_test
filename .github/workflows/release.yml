@@ -12,9 +12,7 @@ jobs:
 
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    env:
-      GITHUB_AUTH: ${{ secrets.SERVICE_ACCOUNT_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.SERVICE_ACCOUNT_TOKEN }}
+
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -22,6 +20,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Symlink package.json to root
         run: ln -s assets/package.json package.json
@@ -38,3 +37,6 @@ jobs:
           npm install
           echo Run release-it
           npx release-it minor --ci
+        env:
+          GITHUB_AUTH: ${{ secrets.SERVICE_ACCOUNT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SERVICE_ACCOUNT_TOKEN }}
