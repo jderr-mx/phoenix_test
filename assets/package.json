@@ -40,8 +40,7 @@
     },
     "github": {
       "release": true,
-      "releaseNotes": "npx --quiet lerna-changelog --nextVersion=Released",
-      "tokenRef": "GITHUB_AUTH"
+      "releaseNotes": "npx --quiet lerna-changelog --nextVersion=Released"
     },
     "npm": {
       "publish": false
