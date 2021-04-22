@@ -1,3 +1,11 @@
+## v0.12.0 (2021-04-22)
+
+#### :memo: Documentation
+* [#17](https://github.com/jderr-mx/phoenix_test/pull/17) test change ([@jderr-mx](https://github.com/jderr-mx))
+
+#### Committers: 1
+- John Derr ([@jderr-mx](https://github.com/jderr-mx))
+
 ## v0.11.0 (2021-04-21)
 
 #### :memo: Documentation
