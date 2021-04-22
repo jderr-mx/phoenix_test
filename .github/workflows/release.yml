@@ -20,6 +20,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          token: ${{ secrets.SERVICE_ACCOUNT_TOKEN }}
 
       - name: Symlink package.json to root
         run: ln -s assets/package.json package.json
