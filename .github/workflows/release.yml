@@ -36,7 +36,7 @@ jobs:
           echo Install dependencies
           npm install
           echo Run release-it
-          npx release-it minor --ci
+          npx release-it minor --ci --dry-run
         env:
           GITHUB_AUTH: ${{ secrets.SERVICE_ACCOUNT_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.SERVICE_ACCOUNT_TOKEN }}
